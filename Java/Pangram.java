@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class Main {
+public class Pangram{
     public static void main(String[] args) {
         System.out.print("Please enter input string: ");
         Scanner sc=new Scanner (System.in);
