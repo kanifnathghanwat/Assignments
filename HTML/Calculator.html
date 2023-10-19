@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculator.css">
-    <title>Basic Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
 </head>
+<body bgcolor="#c2c2d6">
+	<h1 class="heading">Calculator</h1>
+	<div class="x1"> 
+		<div class="a1"><input style="background-color:white" type="text" id="display" disabled></div>
+		<div class="a2 buttons"><button style="background-color:skyblue" onclick="clearDisplay()">AC</button></div>
+		<div class="a3 buttons"><button onclick="appendToDisplay('9')">9</button></div>
+		<div class="a4 buttons"><button onclick="appendToDisplay('8')">8</button></div>
+		<div class="a5 buttons"><button onclick="appendToDisplay('7')">7</button></div>
+		<div class="a6 buttons1"><button onclick="appendToDisplay('+')">+</button></div>
+		<div class="a7 buttons"><button onclick="appendToDisplay('4')">4</button></div>
+		<div class="a8 buttons"><button onclick="appendToDisplay('5')">5</button></div>
+		<div class="a9 buttons"><button onclick="appendToDisplay('6')">6</button></div>
+		<div class="a10 buttons1"><button onclick="appendToDisplay('-')">-</button></div>
+		<div class="a11 buttons"><button onclick="appendToDisplay('1')">1</button></div>
+		<div class="a12 buttons"><button onclick="appendToDisplay('2')">2</button></div>
+		<div class="a13 buttons"><button onclick="appendToDisplay('3')">3</button></div>
+		<div class="a14 buttons1"><button onclick="appendToDisplay('/')">/</button></div>
+		<div class="a15 buttons"><button onclick="appendToDisplay('.')">.</button></div>
+		<div class="a16 buttons"><button onclick="appendToDisplay('0')">0</button></div>
+		<div class="a17 buttons"><button onclick="calculateResult()">=</button></div>
+		<div class="a18 buttons1"><button onclick="appendToDisplay('*')">*</button></div>
+	</div>
 
-<body bgcolor="gray">
-    <div class="calculator">
-    	<h2>Calculator</h2>
-        <input style="background-color:white" type="text" id="display" disabled>
-        <div class="buttons">
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button style="background-color:skyblue" onclick="clearDisplay()">C</button>
-            <button onclick="calculateResult()">=</button>
-            <button onclick="appendToDisplay('/')">/</button>
-        </div>
-        
-    </div>
-    <script src="calculator.js"></script>
+
+	<script src="calculator.js"></script>
+
 </body>
-
 </html>
