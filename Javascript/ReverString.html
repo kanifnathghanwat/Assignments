@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reverse String</title>
+</head>
+<body>
+<h2>Reverse String</h2>
+    <script type="text/javascript">
+        
+        function reverseWords(sentence) {
+    // Split the sentence into words
+    let words = sentence.split(" ");
+
+    // Reverse each word and join them back into a sentence
+    let reversedWords = words.map(word => {
+        // Reverse the characters of the word
+        let reversedWord = word.split('').reverse().join('');
+        return reversedWord;
+    });
+
+    // Join the reversed words into a sentence
+    let reversedSentence = reversedWords.join(' ');
+
+    return reversedSentence;
+}
+
+// Example usage
+let inputSentence = "This is a sunny day";
+let reversedSentence = reverseWords(inputSentence);
+console.log("Reversed words in the sentence: " + reversedSentence);
+
+    </script>
+
+</body>
+</html>
